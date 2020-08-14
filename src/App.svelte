@@ -1,0 +1,31 @@
+<script>
+	import Navbar from "./Components/Navbar.svelte";
+	import Banner from "./Components/Banner.svelte";
+	import Services from "./Components/Services.svelte";
+	import About from "./Components/About.svelte";
+	import Testimonials from "./Components/Testimonials.svelte";
+	import Social from "./Components/Social.svelte";
+	import Footer from "./Components/Footer.svelte";
+	import DATA from "./Data/data";
+</script>
+
+<!-- Navbar -->
+<Navbar header={DATA.HEADER} navlists={DATA.NAVBAR_DATA}/>
+
+<!-- Banner -->
+<Banner bannerData = {DATA.BANNER_DATA}/>
+
+<!-- Services -->
+<Services serviceData = {DATA.SERVICES_DATA}/>
+
+<!-- About -->
+<About aboutData = {DATA.ABOUT_DATA}/>
+
+<!-- Testimonials -->
+<Testimonials testimonialsData = {DATA.TESTIMONIALS_DATA}/>
+
+<!-- Social -->
+<Social socialData = {DATA.SOCIAL_DATA}/>
+
+<!-- Footer -->
+<Footer footerData = {DATA.FOOTER_DATA} header = {DATA.HEADER}/>
