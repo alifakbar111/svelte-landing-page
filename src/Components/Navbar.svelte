@@ -2,7 +2,7 @@
     export let navlists = [];
     export let header;
 </script>
-<nav class="navbar is-fixed-top is-info" id="nav-bar">
+<nav class="navbar is-fixed-top is-info" id="nav-bar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item is-size-4" href="/">
             {header}
@@ -29,8 +29,12 @@ a.navbar-item:hover {
     background-color: transparent !important;
     text-decoration: none;
 }
-.navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+@media screen and (min-width: 746px) {
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
+
 </style>
